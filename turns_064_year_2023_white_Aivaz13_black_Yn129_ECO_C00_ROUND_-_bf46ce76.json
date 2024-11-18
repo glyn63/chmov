@@ -1,0 +1,601 @@
+{
+  "headers": {
+    "Event": "Rated Classical game",
+    "Site": "https://lichess.org/iWhyWRoA",
+    "Date": "2023.06.02",
+    "Round": "-",
+    "White": "Aivaz13",
+    "Black": "Yn-129",
+    "Result": "1-0",
+    "BlackElo": "1448",
+    "BlackRatingDiff": "-5",
+    "ECO": "C00",
+    "Opening": "French Defense: Steinitz Attack",
+    "Termination": "Normal",
+    "TimeControl": "2400+3",
+    "UTCDate": "2023.06.02",
+    "UTCTime": "08:25:59",
+    "WhiteElo": "1715",
+    "WhiteRatingDiff": "+7"
+  },
+  "pgn": "1. g3 Nf6 2. Bg2 e5 3. f3 Be7 4. Nh3 O-O 5. Nf2 d6 6. O-O Nc6 7. e4 Bd7 8. d3 d5 9. d4 dxe4 10. dxe5 Nxe5 11. fxe4 Bg4 12. Qe1 Nf3+ 13. Bxf3 Bxf3 14. Nh3 Qd7 15. Ng5 Bg4 16. Nc3 Be6 17. Bf4 Qd8 18. Rd1 Bd6 19. e5 Bc5+ 20. Kg2 Nd5 21. Nxd5 Bxd5+ 22. Nf3 Bxf3+ 23. Kxf3 Qe7 24. Qe2 Bb6 25. Rfe1 f6 26. Kg2 fxe5 27. Bxe5 Qc5 28. Bd4 Rf2+ 29. Qxf2 Qxd4 30. Qxd4 Bxd4 31. Rxd4 Rf8 32. Rde4 Rf2+ 1-0",
+  "result": "1-0",
+  "moves": [
+    {
+      "turn": 1,
+      "piece": "p",
+      "color": "w",
+      "from": "g2",
+      "to": "g3",
+      "san": "g3",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/6P1/PPPPPP1P/RNBQKBNR b KQkq - 0 1"
+    },
+    {
+      "turn": 2,
+      "piece": "n",
+      "color": "b",
+      "from": "g8",
+      "to": "f6",
+      "san": "Nf6",
+      "fen": "rnbqkb1r/pppppppp/5n2/8/8/6P1/PPPPPP1P/RNBQKBNR w KQkq - 1 2"
+    },
+    {
+      "turn": 3,
+      "piece": "b",
+      "color": "w",
+      "from": "f1",
+      "to": "g2",
+      "san": "Bg2",
+      "fen": "rnbqkb1r/pppppppp/5n2/8/8/6P1/PPPPPPBP/RNBQK1NR b KQkq - 2 2"
+    },
+    {
+      "turn": 4,
+      "piece": "p",
+      "color": "b",
+      "from": "e7",
+      "to": "e5",
+      "san": "e5",
+      "fen": "rnbqkb1r/pppp1ppp/5n2/4p3/8/6P1/PPPPPPBP/RNBQK1NR w KQkq - 0 3"
+    },
+    {
+      "turn": 5,
+      "piece": "p",
+      "color": "w",
+      "from": "f2",
+      "to": "f3",
+      "san": "f3",
+      "fen": "rnbqkb1r/pppp1ppp/5n2/4p3/8/5PP1/PPPPP1BP/RNBQK1NR b KQkq - 0 3"
+    },
+    {
+      "turn": 6,
+      "piece": "b",
+      "color": "b",
+      "from": "f8",
+      "to": "e7",
+      "san": "Be7",
+      "fen": "rnbqk2r/ppppbppp/5n2/4p3/8/5PP1/PPPPP1BP/RNBQK1NR w KQkq - 1 4"
+    },
+    {
+      "turn": 7,
+      "piece": "n",
+      "color": "w",
+      "from": "g1",
+      "to": "h3",
+      "san": "Nh3",
+      "fen": "rnbqk2r/ppppbppp/5n2/4p3/8/5PPN/PPPPP1BP/RNBQK2R b KQkq - 2 4"
+    },
+    {
+      "turn": 8,
+      "piece": "k",
+      "color": "b",
+      "from": "e8",
+      "to": "g8",
+      "san": "O-O",
+      "fen": "rnbq1rk1/ppppbppp/5n2/4p3/8/5PPN/PPPPP1BP/RNBQK2R w KQ - 3 5"
+    },
+    {
+      "turn": 9,
+      "piece": "n",
+      "color": "w",
+      "from": "h3",
+      "to": "f2",
+      "san": "Nf2",
+      "fen": "rnbq1rk1/ppppbppp/5n2/4p3/8/5PP1/PPPPPNBP/RNBQK2R b KQ - 4 5"
+    },
+    {
+      "turn": 10,
+      "piece": "p",
+      "color": "b",
+      "from": "d7",
+      "to": "d6",
+      "san": "d6",
+      "fen": "rnbq1rk1/ppp1bppp/3p1n2/4p3/8/5PP1/PPPPPNBP/RNBQK2R w KQ - 0 6"
+    },
+    {
+      "turn": 11,
+      "piece": "k",
+      "color": "w",
+      "from": "e1",
+      "to": "g1",
+      "san": "O-O",
+      "fen": "rnbq1rk1/ppp1bppp/3p1n2/4p3/8/5PP1/PPPPPNBP/RNBQ1RK1 b - - 1 6"
+    },
+    {
+      "turn": 12,
+      "piece": "n",
+      "color": "b",
+      "from": "b8",
+      "to": "c6",
+      "san": "Nc6",
+      "fen": "r1bq1rk1/ppp1bppp/2np1n2/4p3/8/5PP1/PPPPPNBP/RNBQ1RK1 w - - 2 7"
+    },
+    {
+      "turn": 13,
+      "piece": "p",
+      "color": "w",
+      "from": "e2",
+      "to": "e4",
+      "san": "e4",
+      "fen": "r1bq1rk1/ppp1bppp/2np1n2/4p3/4P3/5PP1/PPPP1NBP/RNBQ1RK1 b - - 0 7"
+    },
+    {
+      "turn": 14,
+      "piece": "b",
+      "color": "b",
+      "from": "c8",
+      "to": "d7",
+      "san": "Bd7",
+      "fen": "r2q1rk1/pppbbppp/2np1n2/4p3/4P3/5PP1/PPPP1NBP/RNBQ1RK1 w - - 1 8"
+    },
+    {
+      "turn": 15,
+      "piece": "p",
+      "color": "w",
+      "from": "d2",
+      "to": "d3",
+      "san": "d3",
+      "fen": "r2q1rk1/pppbbppp/2np1n2/4p3/4P3/3P1PP1/PPP2NBP/RNBQ1RK1 b - - 0 8"
+    },
+    {
+      "turn": 16,
+      "piece": "p",
+      "color": "b",
+      "from": "d6",
+      "to": "d5",
+      "san": "d5",
+      "fen": "r2q1rk1/pppbbppp/2n2n2/3pp3/4P3/3P1PP1/PPP2NBP/RNBQ1RK1 w - - 0 9"
+    },
+    {
+      "turn": 17,
+      "piece": "p",
+      "color": "w",
+      "from": "d3",
+      "to": "d4",
+      "san": "d4",
+      "fen": "r2q1rk1/pppbbppp/2n2n2/3pp3/3PP3/5PP1/PPP2NBP/RNBQ1RK1 b - - 0 9"
+    },
+    {
+      "turn": 18,
+      "piece": "p",
+      "color": "b",
+      "from": "d5",
+      "to": "e4",
+      "san": "dxe4",
+      "fen": "r2q1rk1/pppbbppp/2n2n2/4p3/3Pp3/5PP1/PPP2NBP/RNBQ1RK1 w - - 0 10"
+    },
+    {
+      "turn": 19,
+      "piece": "p",
+      "color": "w",
+      "from": "d4",
+      "to": "e5",
+      "san": "dxe5",
+      "fen": "r2q1rk1/pppbbppp/2n2n2/4P3/4p3/5PP1/PPP2NBP/RNBQ1RK1 b - - 0 10"
+    },
+    {
+      "turn": 20,
+      "piece": "n",
+      "color": "b",
+      "from": "c6",
+      "to": "e5",
+      "san": "Nxe5",
+      "fen": "r2q1rk1/pppbbppp/5n2/4n3/4p3/5PP1/PPP2NBP/RNBQ1RK1 w - - 0 11"
+    },
+    {
+      "turn": 21,
+      "piece": "p",
+      "color": "w",
+      "from": "f3",
+      "to": "e4",
+      "san": "fxe4",
+      "fen": "r2q1rk1/pppbbppp/5n2/4n3/4P3/6P1/PPP2NBP/RNBQ1RK1 b - - 0 11"
+    },
+    {
+      "turn": 22,
+      "piece": "b",
+      "color": "b",
+      "from": "d7",
+      "to": "g4",
+      "san": "Bg4",
+      "fen": "r2q1rk1/ppp1bppp/5n2/4n3/4P1b1/6P1/PPP2NBP/RNBQ1RK1 w - - 1 12"
+    },
+    {
+      "turn": 23,
+      "piece": "q",
+      "color": "w",
+      "from": "d1",
+      "to": "e1",
+      "san": "Qe1",
+      "fen": "r2q1rk1/ppp1bppp/5n2/4n3/4P1b1/6P1/PPP2NBP/RNB1QRK1 b - - 2 12"
+    },
+    {
+      "turn": 24,
+      "piece": "n",
+      "color": "b",
+      "from": "e5",
+      "to": "f3",
+      "san": "Nf3+",
+      "fen": "r2q1rk1/ppp1bppp/5n2/8/4P1b1/5nP1/PPP2NBP/RNB1QRK1 w - - 3 13"
+    },
+    {
+      "turn": 25,
+      "piece": "b",
+      "color": "w",
+      "from": "g2",
+      "to": "f3",
+      "san": "Bxf3",
+      "fen": "r2q1rk1/ppp1bppp/5n2/8/4P1b1/5BP1/PPP2N1P/RNB1QRK1 b - - 0 13"
+    },
+    {
+      "turn": 26,
+      "piece": "b",
+      "color": "b",
+      "from": "g4",
+      "to": "f3",
+      "san": "Bxf3",
+      "fen": "r2q1rk1/ppp1bppp/5n2/8/4P3/5bP1/PPP2N1P/RNB1QRK1 w - - 0 14"
+    },
+    {
+      "turn": 27,
+      "piece": "n",
+      "color": "w",
+      "from": "f2",
+      "to": "h3",
+      "san": "Nh3",
+      "fen": "r2q1rk1/ppp1bppp/5n2/8/4P3/5bPN/PPP4P/RNB1QRK1 b - - 1 14"
+    },
+    {
+      "turn": 28,
+      "piece": "q",
+      "color": "b",
+      "from": "d8",
+      "to": "d7",
+      "san": "Qd7",
+      "fen": "r4rk1/pppqbppp/5n2/8/4P3/5bPN/PPP4P/RNB1QRK1 w - - 2 15"
+    },
+    {
+      "turn": 29,
+      "piece": "n",
+      "color": "w",
+      "from": "h3",
+      "to": "g5",
+      "san": "Ng5",
+      "fen": "r4rk1/pppqbppp/5n2/6N1/4P3/5bP1/PPP4P/RNB1QRK1 b - - 3 15"
+    },
+    {
+      "turn": 30,
+      "piece": "b",
+      "color": "b",
+      "from": "f3",
+      "to": "g4",
+      "san": "Bg4",
+      "fen": "r4rk1/pppqbppp/5n2/6N1/4P1b1/6P1/PPP4P/RNB1QRK1 w - - 4 16"
+    },
+    {
+      "turn": 31,
+      "piece": "n",
+      "color": "w",
+      "from": "b1",
+      "to": "c3",
+      "san": "Nc3",
+      "fen": "r4rk1/pppqbppp/5n2/6N1/4P1b1/2N3P1/PPP4P/R1B1QRK1 b - - 5 16"
+    },
+    {
+      "turn": 32,
+      "piece": "b",
+      "color": "b",
+      "from": "g4",
+      "to": "e6",
+      "san": "Be6",
+      "fen": "r4rk1/pppqbppp/4bn2/6N1/4P3/2N3P1/PPP4P/R1B1QRK1 w - - 6 17"
+    },
+    {
+      "turn": 33,
+      "piece": "b",
+      "color": "w",
+      "from": "c1",
+      "to": "f4",
+      "san": "Bf4",
+      "fen": "r4rk1/pppqbppp/4bn2/6N1/4PB2/2N3P1/PPP4P/R3QRK1 b - - 7 17"
+    },
+    {
+      "turn": 34,
+      "piece": "q",
+      "color": "b",
+      "from": "d7",
+      "to": "d8",
+      "san": "Qd8",
+      "fen": "r2q1rk1/ppp1bppp/4bn2/6N1/4PB2/2N3P1/PPP4P/R3QRK1 w - - 8 18"
+    },
+    {
+      "turn": 35,
+      "piece": "r",
+      "color": "w",
+      "from": "a1",
+      "to": "d1",
+      "san": "Rd1",
+      "fen": "r2q1rk1/ppp1bppp/4bn2/6N1/4PB2/2N3P1/PPP4P/3RQRK1 b - - 9 18"
+    },
+    {
+      "turn": 36,
+      "piece": "b",
+      "color": "b",
+      "from": "e7",
+      "to": "d6",
+      "san": "Bd6",
+      "fen": "r2q1rk1/ppp2ppp/3bbn2/6N1/4PB2/2N3P1/PPP4P/3RQRK1 w - - 10 19"
+    },
+    {
+      "turn": 37,
+      "piece": "p",
+      "color": "w",
+      "from": "e4",
+      "to": "e5",
+      "san": "e5",
+      "fen": "r2q1rk1/ppp2ppp/3bbn2/4P1N1/5B2/2N3P1/PPP4P/3RQRK1 b - - 0 19"
+    },
+    {
+      "turn": 38,
+      "piece": "b",
+      "color": "b",
+      "from": "d6",
+      "to": "c5",
+      "san": "Bc5+",
+      "fen": "r2q1rk1/ppp2ppp/4bn2/2b1P1N1/5B2/2N3P1/PPP4P/3RQRK1 w - - 1 20"
+    },
+    {
+      "turn": 39,
+      "piece": "k",
+      "color": "w",
+      "from": "g1",
+      "to": "g2",
+      "san": "Kg2",
+      "fen": "r2q1rk1/ppp2ppp/4bn2/2b1P1N1/5B2/2N3P1/PPP3KP/3RQR2 b - - 2 20"
+    },
+    {
+      "turn": 40,
+      "piece": "n",
+      "color": "b",
+      "from": "f6",
+      "to": "d5",
+      "san": "Nd5",
+      "fen": "r2q1rk1/ppp2ppp/4b3/2bnP1N1/5B2/2N3P1/PPP3KP/3RQR2 w - - 3 21"
+    },
+    {
+      "turn": 41,
+      "piece": "n",
+      "color": "w",
+      "from": "c3",
+      "to": "d5",
+      "san": "Nxd5",
+      "fen": "r2q1rk1/ppp2ppp/4b3/2bNP1N1/5B2/6P1/PPP3KP/3RQR2 b - - 0 21"
+    },
+    {
+      "turn": 42,
+      "piece": "b",
+      "color": "b",
+      "from": "e6",
+      "to": "d5",
+      "san": "Bxd5+",
+      "fen": "r2q1rk1/ppp2ppp/8/2bbP1N1/5B2/6P1/PPP3KP/3RQR2 w - - 0 22"
+    },
+    {
+      "turn": 43,
+      "piece": "n",
+      "color": "w",
+      "from": "g5",
+      "to": "f3",
+      "san": "Nf3",
+      "fen": "r2q1rk1/ppp2ppp/8/2bbP3/5B2/5NP1/PPP3KP/3RQR2 b - - 1 22"
+    },
+    {
+      "turn": 44,
+      "piece": "b",
+      "color": "b",
+      "from": "d5",
+      "to": "f3",
+      "san": "Bxf3+",
+      "fen": "r2q1rk1/ppp2ppp/8/2b1P3/5B2/5bP1/PPP3KP/3RQR2 w - - 0 23"
+    },
+    {
+      "turn": 45,
+      "piece": "k",
+      "color": "w",
+      "from": "g2",
+      "to": "f3",
+      "san": "Kxf3",
+      "fen": "r2q1rk1/ppp2ppp/8/2b1P3/5B2/5KP1/PPP4P/3RQR2 b - - 0 23"
+    },
+    {
+      "turn": 46,
+      "piece": "q",
+      "color": "b",
+      "from": "d8",
+      "to": "e7",
+      "san": "Qe7",
+      "fen": "r4rk1/ppp1qppp/8/2b1P3/5B2/5KP1/PPP4P/3RQR2 w - - 1 24"
+    },
+    {
+      "turn": 47,
+      "piece": "q",
+      "color": "w",
+      "from": "e1",
+      "to": "e2",
+      "san": "Qe2",
+      "fen": "r4rk1/ppp1qppp/8/2b1P3/5B2/5KP1/PPP1Q2P/3R1R2 b - - 2 24"
+    },
+    {
+      "turn": 48,
+      "piece": "b",
+      "color": "b",
+      "from": "c5",
+      "to": "b6",
+      "san": "Bb6",
+      "fen": "r4rk1/ppp1qppp/1b6/4P3/5B2/5KP1/PPP1Q2P/3R1R2 w - - 3 25"
+    },
+    {
+      "turn": 49,
+      "piece": "r",
+      "color": "w",
+      "from": "f1",
+      "to": "e1",
+      "san": "Rfe1",
+      "fen": "r4rk1/ppp1qppp/1b6/4P3/5B2/5KP1/PPP1Q2P/3RR3 b - - 4 25"
+    },
+    {
+      "turn": 50,
+      "piece": "p",
+      "color": "b",
+      "from": "f7",
+      "to": "f6",
+      "san": "f6",
+      "fen": "r4rk1/ppp1q1pp/1b3p2/4P3/5B2/5KP1/PPP1Q2P/3RR3 w - - 0 26"
+    },
+    {
+      "turn": 51,
+      "piece": "k",
+      "color": "w",
+      "from": "f3",
+      "to": "g2",
+      "san": "Kg2",
+      "fen": "r4rk1/ppp1q1pp/1b3p2/4P3/5B2/6P1/PPP1Q1KP/3RR3 b - - 1 26"
+    },
+    {
+      "turn": 52,
+      "piece": "p",
+      "color": "b",
+      "from": "f6",
+      "to": "e5",
+      "san": "fxe5",
+      "fen": "r4rk1/ppp1q1pp/1b6/4p3/5B2/6P1/PPP1Q1KP/3RR3 w - - 0 27"
+    },
+    {
+      "turn": 53,
+      "piece": "b",
+      "color": "w",
+      "from": "f4",
+      "to": "e5",
+      "san": "Bxe5",
+      "fen": "r4rk1/ppp1q1pp/1b6/4B3/8/6P1/PPP1Q1KP/3RR3 b - - 0 27"
+    },
+    {
+      "turn": 54,
+      "piece": "q",
+      "color": "b",
+      "from": "e7",
+      "to": "c5",
+      "san": "Qc5",
+      "fen": "r4rk1/ppp3pp/1b6/2q1B3/8/6P1/PPP1Q1KP/3RR3 w - - 1 28"
+    },
+    {
+      "turn": 55,
+      "piece": "b",
+      "color": "w",
+      "from": "e5",
+      "to": "d4",
+      "san": "Bd4",
+      "fen": "r4rk1/ppp3pp/1b6/2q5/3B4/6P1/PPP1Q1KP/3RR3 b - - 2 28"
+    },
+    {
+      "turn": 56,
+      "piece": "r",
+      "color": "b",
+      "from": "f8",
+      "to": "f2",
+      "san": "Rf2+",
+      "fen": "r5k1/ppp3pp/1b6/2q5/3B4/6P1/PPP1QrKP/3RR3 w - - 3 29"
+    },
+    {
+      "turn": 57,
+      "piece": "q",
+      "color": "w",
+      "from": "e2",
+      "to": "f2",
+      "san": "Qxf2",
+      "fen": "r5k1/ppp3pp/1b6/2q5/3B4/6P1/PPP2QKP/3RR3 b - - 0 29"
+    },
+    {
+      "turn": 58,
+      "piece": "q",
+      "color": "b",
+      "from": "c5",
+      "to": "d4",
+      "san": "Qxd4",
+      "fen": "r5k1/ppp3pp/1b6/8/3q4/6P1/PPP2QKP/3RR3 w - - 0 30"
+    },
+    {
+      "turn": 59,
+      "piece": "q",
+      "color": "w",
+      "from": "f2",
+      "to": "d4",
+      "san": "Qxd4",
+      "fen": "r5k1/ppp3pp/1b6/8/3Q4/6P1/PPP3KP/3RR3 b - - 0 30"
+    },
+    {
+      "turn": 60,
+      "piece": "b",
+      "color": "b",
+      "from": "b6",
+      "to": "d4",
+      "san": "Bxd4",
+      "fen": "r5k1/ppp3pp/8/8/3b4/6P1/PPP3KP/3RR3 w - - 0 31"
+    },
+    {
+      "turn": 61,
+      "piece": "r",
+      "color": "w",
+      "from": "d1",
+      "to": "d4",
+      "san": "Rxd4",
+      "fen": "r5k1/ppp3pp/8/8/3R4/6P1/PPP3KP/4R3 b - - 0 31"
+    },
+    {
+      "turn": 62,
+      "piece": "r",
+      "color": "b",
+      "from": "a8",
+      "to": "f8",
+      "san": "Rf8",
+      "fen": "5rk1/ppp3pp/8/8/3R4/6P1/PPP3KP/4R3 w - - 1 32"
+    },
+    {
+      "turn": 63,
+      "piece": "r",
+      "color": "w",
+      "from": "d4",
+      "to": "e4",
+      "san": "Rde4",
+      "fen": "5rk1/ppp3pp/8/8/4R3/6P1/PPP3KP/4R3 b - - 2 32"
+    },
+    {
+      "turn": 64,
+      "piece": "r",
+      "color": "b",
+      "from": "f8",
+      "to": "f2",
+      "san": "Rf2+",
+      "fen": "6k1/ppp3pp/8/8/4R3/6P1/PPP2rKP/4R3 w - - 3 33"
+    }
+  ]
+}
