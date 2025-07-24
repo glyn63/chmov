@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Pixel Editor</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .controls {
+            margin-bottom: 20px;
+            display: flex;
+            gap: 15px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .grid-container {
+            display: inline-block;
+            border: 2px solid #333;
+            background: white;
+            margin-bottom: 20px;
+        }
+        .grid {
+            display: grid;
+            gap: 1px;
+            background: #ddd;
+            padding: 1px;
+        }
+        .pixel {
+            width: 20px;
+            height: 20px;
+            background: white;
+            cursor: pointer;
+            border: 1px solid #ccc;
+        }
+        .pixel:hover {
+            border-color: #007bff;
+        }
+        .color-btn {
+            padding: 10px 15px;
+            border: 2px solid #333;
+            cursor: pointer;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+        .color-btn.active {
+            border-color: #007bff;
+            background: #e7f3ff;
+        }
+        .white { background: white; color: #333; }
+        .black { background: black; color: white; }
+        .grey { background: #888; color: white; }
+        button {
+            padding: 8px 16px;
+            background: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #0056b3;
+        }
+        select {
+            padding: 5px;
+            border-radius: 4px;
+            border: 1px solid #ddd;
+        }
+        .output-section {
+            background: #f8f9fa;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 15px;
+        }
+        .code-output {
+            background: #2d3748;
+            color: #e2e8f0;
+            padding: 15px;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+            font-size: 14px;
+            white-space: pre-wrap;
+            overflow-x: auto;
+            max-height: 400px;
+            overflow-y: auto;
+            margin: 10px 0;
+        }
+        label {
+            font-weight: bold;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Simple Pixel Editor</h1>
+        <p>White (blank), Black (x), Grey (.) - Click to paint, get string array output</p>
+        
+        <div class="controls">
+            <label for="gridSize">Size:</label>
+            <select id="gridSize" onchange="changeGridSize()">
+                <option value="8">8×8</option>
+                <option value="15" selected>15×15</option>
+                <option value="16" selected>16×16</option>
+                <option value="25">25×25</option>
+                <option value="32">32×32</option>
+            </select>
+            
+            <div class="color-btn white active" onclick="setColor('white')">White (blank)</div>
+            <div class="color-btn black" onclick="setColor('black')">Black (x)</div>
+            <div class="color-btn grey" onclick="setColor('grey')">Grey (.)</div>
+            
+            <button onclick="clearGrid()">Clear All</button>
+        </div>
+
+        <div class="grid-container">
+            <div id="pixelGrid" class="grid"></div>
+        </div>
+
+        <div class="output-section">
+            <h3>Array Output</h3>
+            <div id="arrayOutput" class="code-output">// Click pixels to see array</div>
+            <button onclick="copyToClipboard()">Copy Array</button>
+        </div>
+    </div>
+
+    <script>
+        var gridSize = 16;
+        var currentColor = 'white';
+        var pixelData = [];
+        var isMouseDown = false;
+
+        function setColor(color) {
+            currentColor = color;
+            var buttons = document.querySelectorAll('.color-btn');
+            for (var i = 0; i < buttons.length; i++) {
+                buttons[i].classList.remove('active');
+            }
+            document.querySelector('.color-btn.' + color).classList.add('active');
+        }
+
+        function changeGridSize() {
+            gridSize = parseInt(document.getElementById('gridSize').value);
+            initGrid();
+        }
+
+        function paintPixel(row, col) {
+            var index = row * gridSize + col;
+            var pixel = document.getElementById('pixel_' + row + '_' + col);
+            pixelData[index] = currentColor;
+            
+            if (currentColor === 'white') {
+                pixel.style.backgroundColor = 'white';
+            } else if (currentColor === 'black') {
+                pixel.style.backgroundColor = 'black';
+            } else if (currentColor === 'grey') {
+                pixel.style.backgroundColor = '#888';
+            }
+            
+            updateOutput();
+        }
+
+        function initGrid() {
+            var grid = document.getElementById('pixelGrid');
+            grid.style.gridTemplateColumns = 'repeat(' + gridSize + ', 1fr)';
+            grid.innerHTML = '';
+            pixelData = [];
+
+            for (var row = 0; row < gridSize; row++) {
+                for (var col = 0; col < gridSize; col++) {
+                    var pixel = document.createElement('div');
+                    pixel.className = 'pixel';
+                    pixel.id = 'pixel_' + row + '_' + col;
+                    pixel.style.backgroundColor = 'white';
+                    
+                    // Use inline onclick for maximum compatibility
+                    pixel.setAttribute('onclick', 'paintPixel(' + row + ',' + col + ')');
+                    pixel.setAttribute('onmouseenter', 'if(isMouseDown) paintPixel(' + row + ',' + col + ')');
+                    
+                    grid.appendChild(pixel);
+                    pixelData.push('white');
+                }
+            }
+            updateOutput();
+        }
+
+        function clearGrid() {
+            for (var row = 0; row < gridSize; row++) {
+                for (var col = 0; col < gridSize; col++) {
+                    var pixel = document.getElementById('pixel_' + row + '_' + col);
+                    pixel.style.backgroundColor = 'white';
+                    pixelData[row * gridSize + col] = 'white';
+                }
+            }
+            updateOutput();
+        }
+
+        function updateOutput() {
+            var rows = [];
+            
+            for (var row = 0; row < gridSize; row++) {
+                var rowString = '';
+                for (var col = 0; col < gridSize; col++) {
+                    var pixelValue = pixelData[row * gridSize + col];
+                    if (pixelValue === 'white') {
+                        rowString += ' ';
+                    } else if (pixelValue === 'black') {
+                        rowString += 'x';
+                    } else if (pixelValue === 'grey') {
+                        rowString += '.';
+                    }
+                }
+                rows.push('"' + rowString + '"');
+            }
+            
+            var arrayCode = 'const pixelArray = [\n  ' + rows.join(',\n  ') + '\n];\n\n// Grid size: ' + gridSize + '×' + gridSize + '\n// \' \' = white/blank, \'x\' = black, \'.\' = grey\n// Usage: pixelArray[row][col]';
+            document.getElementById('arrayOutput').textContent = arrayCode;
+        }
+
+        function copyToClipboard() {
+            var text = document.getElementById('arrayOutput').textContent;
+            if (navigator.clipboard) {
+                navigator.clipboard.writeText(text).then(function() {
+                    alert('Copied to clipboard!');
+                });
+            } else {
+                var textArea = document.createElement('textarea');
+                textArea.value = text;
+                document.body.appendChild(textArea);
+                textArea.select();
+                document.execCommand('copy');
+                document.body.removeChild(textArea);
+                alert('Copied to clipboard!');
+            }
+        }
+
+        // Track mouse state for dragging
+        document.addEventListener('mousedown', function() {
+            isMouseDown = true;
+        });
+
+        document.addEventListener('mouseup', function() {
+            isMouseDown = false;
+        });
+
+        // Initialize on load
+        window.onload = function() {
+            initGrid();
+        };
+    </script>
+</body>
+</html>
